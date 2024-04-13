@@ -1,0 +1,12 @@
+@import url('./header.css');
+@font-face {
+    font-family: "kapakana";
+    src: url("../fontes/kapakana-regular.ttf") format("truetype");
+}
+header {
+    font-family: "kapakana", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
