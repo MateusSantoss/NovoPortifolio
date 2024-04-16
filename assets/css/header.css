@@ -17,6 +17,7 @@ h1#texto-header {
     animation-iteration-count: 2;
 }
 
+/*Texto que aparece acima do logo do angular */
 @keyframes textoHeader {
      from {opacity: 0.5;}
      to {opacity: 1;}
@@ -33,6 +34,29 @@ h1#texto-header {
 
 .logo img {
     margin-top: 77px;
+}
+
+#circulo {
+    
+    position: absolute;
+    width: 259px;
+    height: 250px;
+    border-radius: 150px;
+    background-color: transparent;
+    border: 6px solid #F52DAC;
+    animation-name: circulo-cores;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    top: 65px;
+    left: 15px;
+}
+
+@keyframes circulo-cores {
+    0% {border: 6px solid  #F52DAC;}
+    50% {border: 10px double #c82bef;}
+    100% {border: 6px solid #F4024B;}
+    
+    
 }
 
 
@@ -53,12 +77,53 @@ h1#texto-header {
 .nav-bar ul li a:hover {
     color: #EAE6CD;
 }
+
+/*esferas que ficam ao redor do logo */
 #ball-1, #ball-2, #ball-3 {
     background-color: red;
     position: absolute;
     border-radius: 32px;
     width: 32px;
     height: 32px;
+}
+
+/*icones do fronten */
+#icon1 , #icon2 , #icon3  {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    
+    color: white;
+    
+    
+}
+
+/*icone css*/
+#icon1 {
+    top: 79px;
+    right: 7px;
+    color: red;
+    animation-name: girar;
+    animation-duration: 10s;
+  
+
+}
+
+#icon2 {
+    top: 79px;
+    left: 7px;
+    color: blue;
+   
+}
+
+#icon3 {
+    color: yellow;
+    top: 300px;
+    left: 135px;
+    right: 0px;
+    margin-top: 10px;
+   
+
 }
 
 @keyframes movimentoCircular {
@@ -106,6 +171,7 @@ h1#texto-header {
     100% {top: 0px;}
     
 }
+
 
 #ball-1 {
     top: 79px;
